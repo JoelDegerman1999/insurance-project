@@ -11,6 +11,16 @@ p {
   line-height: 1.9rem;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+}
+
+.nav-bar ul li:first-child a {
+  opacity: 1;
+}
+
 button {
   border: none;
   outline: none;
@@ -237,45 +247,110 @@ footer {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .box {
   min-height: 354.48px;
   max-height: 354.48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   padding: 1rem;
 }
 
 .box h2 {
   font-size: 2rem;
+  opacity: 0.5;
+}
+
+.box p {
+  padding: 2rem;
 }
 
 .how-it-works {
   background-color: #c7ddea;
+  text-align: center;
+}
+
+.how-it-works h1 {
+  grid-row: 2;
+  align-self: center;
 }
 
 .O1 {
   background-color: white;
 }
-.O1 h2 {
-  align-self: flex-start;
+
+.O1 p {
+  grid-row: 2;
+  align-self: center;
+  text-align: center;
 }
 
 .O2 {
   background-color: #e7e7e7;
 }
 
+.O2 p {
+  grid-row: 2;
+  align-self: center;
+  text-align: center;
+  margin: 0 4rem;
+}
+
 .O3 {
   background-color: #fff;
+}
+
+.O3 p {
+  grid-row: 2;
+  align-self: center;
+  text-align: center;
 }
 
 .O4 {
   background-color: #f17949;
 }
 
+.O4 p {
+  grid-row: 2;
+  align-self: center;
+  text-align: center;
+}
+
 .O5 {
   background-color: #fff;
+}
+
+.O5 p {
+  grid-row: 2;
+  align-self: center;
+  text-align: center;
+}
+
+.take-me-up-section {
+  grid-row: 3/4;
+  grid-column: 1/4;
+  background-color: #a9a19e;
+}
+
+.take-me-up {
+  text-align: center;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.take-me-up p {
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.take-me-up i {
+  position: relative;
+  top: 15px;
+}
+
+.take-me-up a {
+  text-decoration: none;
+  color: black;
 }
