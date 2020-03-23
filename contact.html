@@ -4,22 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact us</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
     <header>
-      <h1>Oh hello there!</h1>
-      <img src="img/man-and-baby.svg" alt="man-and-baby" />
+      <div class="upper-information">
+        <h1>Oh hello there!</h1>
+        <img src="img/man-and-baby.svg" alt="man-and-baby" />
+      </div>
       <nav class="nav-bar">
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#">Our offer</a></li>
           <li><a href="#">Why us</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <h1>Whats on your mind?</h1>
+      <form class="contact">
+        <label for="email">Your email</label>
+        <input type="email" name="email" id="email" />
+        <label for="message">Your message</label>
+        <textarea name="message" id="message" cols="25" rows="15"></textarea>
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+    </main>
+    <footer>
+      <img src="img/map.png" alt="map" class="map" />
+    </footer>
   </body>
 </html>
